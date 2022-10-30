@@ -1,0 +1,138 @@
+html{
+--bg: #414141;
+--bg-painel: #6b6b6b;
+--color-headlings: #3664ff;
+--color-text: #d4d4d4;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+img{
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 10px;
+}
+.topnav {
+    margin: 5px;
+    background-color: var(--bg-painel);
+    overflow: hidden;
+    border-radius: 10px;
+    border-bottom: 10px;
+  }
+  
+  .topnav a {
+    float: left;
+    color: var(--color-text);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.5s ease;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: purple;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .wl{
+    text-align: center;
+  }
+  .wl h2{
+    color: rgb(148, 0, 185);
+  }
+  h1{
+    color: var(--color-text);
+  }
+
+  label{
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 27px;
+    background: grey;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+    margin-top: 10px;
+    right: 10px;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+input:checked + label{
+    background-color: var(--color-headlings);
+}
+
+input:checked + label::after{
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after{
+    width: 45px;
+}
+
+.card{
+  background-color: var(--bg-painel);
+  margin: 10px;
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.5s ease;
+  text-align: center;
+  color: var(--color-text);
+}
+.card i{
+  transform: scale(1.6);
+  margin-bottom: 10px;
+}
+.cards{
+  display: flex;
+  justify-content: space-around;
+}
+.card:hover{
+  background-color: purple;
+}
+
+@media (max-width: 610px){
+  .cards{
+    display: block;
+  }
+}
+
+footer{
+  margin-top: 50px;
+  text-align: center;
+  background-color: #212121;
+  padding: 5px;
+}
+footer h3,
+footer h1{
+  color: rgb(200, 200, 200);
+}
