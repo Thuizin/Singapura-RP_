@@ -124,6 +124,7 @@ img{
 }
 .card2:hover{
   background-color: #383838;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.6);
 }
 .card2 img{
   transition: all 0.5s ease;
