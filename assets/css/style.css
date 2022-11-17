@@ -10,6 +10,8 @@ body{
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
+    cursor: default;
 }
 img{
   margin-top: 5px;
@@ -103,6 +105,34 @@ footer h1{
 }
 
 
+/* VIP'S */
+img{
+  width: 40rem;
+}
+
+.card2{
+  background-color:#414141;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 40px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  text-align: center;
+  cursor: pointer;
+  color: var(--color-text);
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.6);
+}
+.card2:hover{
+  background-color: #313131;
+  box-shadow: none;
+}
+.card2 img{
+  transition: all 0.5s ease;
+}
+.card2 img:hover{
+  opacity: 0.5;
+}
+/* SCROLL */
 
 body::-webkit-scrollbar {
   width: 12px;               
