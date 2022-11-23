@@ -129,8 +129,21 @@ img{
 .card2 img{
   transition: all 0.5s ease;
 }
-.card2 img:hover{
+.card2:hover img{
   opacity: 0.5;
+}
+.texto{
+  font-size: 2rem;
+  padding:20px;
+  
+  font-family:Arial;
+  text-align:center;
+  color:#fff;
+  opacity:0;
+  transition:all 0.5s ease;
+}
+.card2:hover .texto{
+  opacity: 1;
 }
 /* SCROLL */
 
@@ -146,4 +159,13 @@ body::-webkit-scrollbar-thumb {
   background-color: red;    
   border-radius: 20px;       
   border: 3px solid #313131;  
+}
+
+footer {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
