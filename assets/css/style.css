@@ -14,8 +14,7 @@ body{
     cursor: default;
 }
 img{
-  margin-top: 5px;
-  width: 100%;
+  width: 50%;
   border-radius: 10px;
 }
 .topnav {
@@ -127,15 +126,20 @@ img{
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.6);
 }
 .card2 img{
+  width: 50%;
   transition: all 0.5s ease;
 }
 .card2:hover img{
   opacity: 0.5;
 }
+@media (max-width: 650px){
+  .card2 img{
+    width: 100%;
+  }
+}
 .texto{
   font-size: 2rem;
   padding:20px;
-  
   font-family:Arial;
   text-align:center;
   color:#fff;
