@@ -132,11 +132,13 @@ img{
 .card2:hover img{
   opacity: 0.5;
 }
+
 @media (max-width: 650px){
   .card2 img{
     width: 100%;
   }
 }
+
 .texto{
   font-size: 2rem;
   padding:20px;
