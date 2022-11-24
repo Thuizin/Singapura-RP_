@@ -78,6 +78,9 @@ img{
   background-color: purple;
   box-shadow: none;
 }
+.logo{
+  width: 70%;
+}
 
 @media (max-width: 610px){
   .cards{
